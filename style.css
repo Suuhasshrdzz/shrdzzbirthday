@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900");
+html {
+  display: grid;
+  min-height: 100%;
+}
+
+body {
+  display: grid;
+  background: #ffffff;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 650px;
+  height: 480px;
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  margin-top: 2em;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #1d1d1d;
+}
+h2 {
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    margin-top: 1em;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #1d1d1d;
+  }
+  
+  .footer{
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    margin-top: 5em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #1d1d1d;
+    left: 30%;
+  }
+
+#timer {
+  color: #F6F4F3;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: .6em;
+  letter-spacing: 5px;
+  margin-top: 25%;
+  z-index: 6;
+  position: relative;
+  top: 20%;
+}
+
+.days, .hours, .minutes, .seconds {
+  display: inline-block;
+  padding: 10px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.days {
+  background: #EF2F3C;
+}
+
+.hours {
+  background: #F6F4F3;
+  color: #183059;
+}
+
+.minutes {
+  background: #276FBF;
+}
+
+.seconds {
+  background: #F0A202;
+}
+
+.numbers {
+  font-family: "Montserrat", sans-serif;
+  color: #1a1a1a;
+  font-size: 3em;
+}
+
+.white {
+  position: absolute;
+  background: #F6F4F3;
+  height: 75px;
+  width: 65px;
+  left: 30%;
+  top: 3%;
+}
+.white .triangle {
+  border-bottom: 14px solid #e2e2e2;
+}
+.white .string {
+  background: #5a5a5a;
+  border: 1px solid #F6F4F3;
+}
+
+.red {
+  position: absolute;
+  background: #EF2F3C;
+  left: 18%;
+  top: 30%;
+  height: 55px;
+  width: 60px;
+}
+.red .triangle {
+  border-bottom: 14px solid #EF2F3C;
+}
+.red .string {
+  background: #EF2F3C;
+  border: 1px solid #EF2F3C;
+}
+
+.blue {
+  position: absolute;
+  background: #F0A202;
+  height: 55px;
+  width: 60px;
+  left: 75%;
+  top: 30%;
+}
+.blue .triangle {
+  border-bottom: 14px solid #F0A202;
+}
+.blue .string {
+  background: #F0A202;
+  border: 1px solid #F0A202;
+}
+
+.balloon {
+  border: 1px solid #000;
+  border-radius: 50% 50% 50% 50%/ 40% 40% 60% 60%;
+  z-index: 2;
+}
+
+.eye {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 40%;
+  left: 19%;
+  background: #000;
+  border-radius: 50%;
+}
+.eye:after {
+  content: '';
+  left: 35px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+}
+
+.mouth {
+  position: absolute;
+  top: 45%;
+  left: 43%;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.happy {
+  border: 2px solid;
+  border-color: transparent #000 #000 transparent;
+  transform: rotate(45deg);
+}
+
+.triangle {
+  position: absolute;
+  left: 40%;
+  bottom: -10%;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+
+.string {
+  position: absolute;
+  height: 70px;
+  width: 1px;
+  left: 48%;
+  top: 100%;
+  z-index: -1;
+}
+
+.star {
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.star-red {
+  width: 25px;
+  height: 25px;
+  margin-left: 48px;
+  margin-top: -5px;
+  background: #EF2F3C;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+
+/* Confetti button */
+
+.confetti-button {
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left:45%;
+  margin-top: 40px;
+    font-size: 1em;
+    padding: 1em 2em;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #ff0081;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+  }
+  
+  .confetti-button:focus { outline: 0; }
+  
+  .confetti-button:before, .confetti-button:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+  }
+  
+  .confetti-button:before {
+    display: none;
+    top: -75%;
+    background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 20%, #ff0081 20%, transparent 30%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+  }
+  
+  .confetti-button:after {
+    display: none;
+    bottom: -75%;
+    background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+  }
+  
+  .confetti-button:active {
+    transform: scale(0.9);
+    background-color: #e60074;
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+  }
+  
+  .confetti-button.animate:before {
+    display: block;
+    animation: topBubbles ease-in-out 0.75s forwards;
+  }
+  
+  .confetti-button.animate:after {
+    display: block;
+    animation: bottomBubbles ease-in-out 0.75s forwards;
+  }
+   @keyframes
+  topBubbles {  0% {
+   background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+  }
+   50% {
+   background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+  }
+   100% {
+   background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+   background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+  }
+  @keyframes
+  bottomBubbles {  0% {
+   background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+  }
+   50% {
+   background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+  }
+   100% {
+   background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+   background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+  }
+
+  .counter{
+      background-color: #e2e2e2;
+      color: #000;
+      padding: 10px;
+      margin: 12px;
+      border-radius: 4px;
+  }
+
+  .panda {
+    max-width: 500px;
+    z-index: -1;
+    position: absolute;
+    top: 8%;
+    left: 3%;
+  }
+
+  .tagline{
+      position: absolute;
+      top: 70%;
+      left: 20%;
+  }
+
+
+  svg {
+    max-width: 500px;
+    z-index: -1;
+    position: absolute;
+    top: 9%;
+    left: 23%;
+  }
